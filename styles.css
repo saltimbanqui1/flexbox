@@ -1,0 +1,385 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #817a79;
+    color: #ffffff;
+    
+    font-family: 'Bebas Neue', sans-serif;
+    padding-top: 40px;
+}
+
+.encabezado {
+    font-size: 30px;
+    margin-bottom: 30px;
+    background-color: #817a79;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #817a79;
+    color: #ffffff;
+    padding: 40px;
+    border-bottom: 2px solid #444;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.encabezado h1 {
+    font-size: 48px;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    background-color: #444;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav a {
+    text-decoration: underline;
+    color: #8b8b8b;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ceebff;
+    color: #817a79;
+}
+
+.Inicio {
+    margin: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Inicio h3 {
+    font-size: 30px;
+}
+
+@media screen and (max-width:1093px){
+    .frase-conmovedora {
+        display: none;
+    }
+}
+
+.contenedor {
+    margin: 40px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 60px;
+    padding: 10px;
+    background-color: rgb(194, 173, 173);
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 1300px) {
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        max-width: 800px;
+    }
+}
+
+.contenedor img {
+    max-width: 50%;
+    height: 600px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 900px) {
+    .contenedor img {
+        max-height: 400px;
+        max-width: 400px;
+    }
+        
+}
+
+.contenedor .frase {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    font-size: 40px;
+    line-height: 1.5;
+    color: #333;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    border: 0.2px solid black;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 900px) {
+    .contenedor .frase {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        max-width: 900px;
+    }
+}
+
+#Secciondeperros {
+    margin-bottom: 30px;
+    border: 1px solid black;
+}
+
+#Secciondeperros h2 {
+    background-color: #e44d4d;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    background-color: #817a79;
+    color: #ffffff;
+    border-bottom: 2px solid #444;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#razas {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: #d1c5c3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1300px) {
+    #razas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #razas img{
+        max-width: 400px;
+        max-height: 400px;
+    }
+}
+
+.Huskysiberiano {
+    margin: 20px;
+    padding: 1px;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.Huskysiberiano:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.Huskysiberiano img {
+    width: 600px;
+}
+
+.pastoralemán {
+    margin: 20px;
+    padding: 1px;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.pastoralemán:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.pastoralemán img {
+    width: 600px;
+}
+
+.shibaInu {
+    margin: 20px;
+    padding: 1px;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.shibaInu:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.shibaInu img {
+    width: 600px;
+}
+
+.samoyedo {
+    margin: 20px;
+    padding: 1px;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.samoyedo:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.samoyedo img {
+    width: 600px;
+}
+
+.chowchow {
+    margin: 20px;
+    padding: 1px;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.chowchow:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.chowchow img {
+    width: 600px;
+}
+
+.tamaskan {
+    margin: 20px;
+    padding: 1px;
+    border: 0.5px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.tamaskan:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.tamaskan img {
+    width: 600px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #00bcd4;
+}
+
+footer p {
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-media a:hover {
+    color: #00bcd4;
+}
